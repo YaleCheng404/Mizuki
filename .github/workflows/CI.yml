@@ -5,6 +5,9 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  repository_dispatch:  # 👈 添加这个
+    types:
+      - content-updated
   workflow_dispatch:
 
 concurrency:
